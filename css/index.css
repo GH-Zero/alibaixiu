@@ -1,0 +1,207 @@
+/* 设置最开始宽度 */
+@media screen and (min-width:1280px) {
+    .container{
+        width: 1280px;
+        background-color: #fff;
+    }
+}
+body{
+    background-color:#F5F5F5;
+}
+/* 让最左部分内间距为0 */
+.left{
+    padding-left: 0 !important;
+}
+/* 去除标签不用样式 */
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+/* 左边部分上边图片设置 */
+.loge{
+    width: 100%;
+    height: 100%;
+    background-color: #429AD9;
+    /* height: 120px; */
+}
+.loge a{
+    display: block;
+    width: 100%;
+}
+.loge a img{
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+/* 在超小屏幕显示 */
+.loge span{
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+/* 下边部分导航部分 */
+.nav{
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+}
+.nav ul {
+    width: 100%;
+}
+/* 当我们进入超小屏幕和小屏幕下.nav下的li浮动 */
+@media screen and (max-width:991px){
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    .centent_top{
+        margin-top: 10px;
+    }
+    .centent_top li:nth-child(1){
+        padding: 0 !important;
+    }
+}
+/* 当进入小屏幕下图片变动 */
+@media screen and (max-width: 767px) {
+    .nav li a {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    .centent_top li:nth-child(1){
+        width: 100% !important;
+    }
+    .centent_top li{
+        width: 50% !important;
+    }
+    .lefts h3{
+        font-size: 14px;
+    }
+}
+.nav ul li a{
+    display: block;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px; 
+    padding-left: 30px;
+}
+.nav ul li a:hover{
+    background-color: #fff;
+    color: #333;
+}
+.nav ul li a::before{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+/* 最右边设置 */
+/* 上边 */
+.banner  img{
+    width: 100%;
+}
+/* 下边 */
+.right-bottom{
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+    padding: 0 20px 20px;
+}
+.right-bottom span{
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.right-bottom p{
+    font-size: 12px;
+}
+/* 中间部分 */
+/* 中间上面 */
+.centent_top {
+    border-bottom: 1px solid #CCCCCC;
+}
+.centent_top li > a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.centent_top img{
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    overflow: hidden;
+}
+.centent_top ul li{
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-left:10px;
+    margin-bottom: 10px;
+}
+.centent_top ul li:nth-child(1){
+    position: relative;
+    width: 50%;
+    height: 266px;
+    padding: 0;
+}
+.centent_top ul li:nth-child(1) img{
+    width: 100%;
+    height: 266px;
+}
+.centent_top ul li:nth-child(1) .carousel-caption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(0, 0,0, .5);
+    line-height: 41px;
+    padding: 0 10px;  
+    
+   
+}
+.centent_top p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    background-color: rgba(0, 0,0, .3);
+    color: #fff;
+    padding:5px 10px;
+    font-size: 12px;
+   
+}
+/* 中间下面部分 */
+.content_new{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.content_new .row{
+    border-bottom: 1px solid #CCCCCC;
+}
+.content_new p{
+    margin-bottom: 10px;
+}
+.right{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
